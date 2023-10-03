@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form id="registrationForm" action="/api/users/register" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required /><br />
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required /><br />
+
+        <!-- Add fields for mobile number, country, and city or town or village -->
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="text" id="mobileNumber" name="mobileNumber" required /><br />
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required /><br />
+
+        <label for="cityOrTownOrVillage">City/Town/Village:</label>
+        <input type="text" id="cityOrTownOrVillage" name="cityOrTownOrVillage" required /><br />
+
+        <button type="submit">Register</button>
+        <div class="text-center" style="margin-top: 15px;">
+            <p>
+                If you already have an account, <a href="/api/users/login">log in here</a>.
+            </p>
+        </div>
+    </form>
+
+    <!-- Display error messages -->
+    <div id="errorContainer" style="color: red;"></div>
+
+    <!-- jQuery library (include it in your HTML) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Handle form submission
+        $("#registrationForm").submit(function (event) {
+            event.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "/api/users/register",
+                data: $(this).serialize(),
+                success: function (response) {
+                    // Handle success (e.g., show success message)
+                    alert(response.status);
+                },
+                error: function (xhr, status, error) {
+                    // Handle error and display an error message
+                    const errorMessage = JSON.parse(xhr.responseText).error;
+                    $("#errorContainer").html(`<div>${errorMessage}</div>`);
+                },
+            });
+        });
+    </script>
+</body>
+</html>
