@@ -1,0 +1,211 @@
+
+        
+        :root {
+            --bs-font-sans-serif: 'Rubik', sans-serif;
+          }
+          
+          .container-xxl { max-width: 1530px;
+                          
+      }
+          
+         
+          body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgba(0, 0, 0, 0.089);
+            
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        /* Rendre la barre de navigation collante */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #3c8dbc54;
+            z-index: 1000;
+            padding: 10px;
+        }
+        .navbar {
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: #3c8dbc;
+            padding: 10px;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            align-items: left;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(199, 193, 193);
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Styles pour le jumbotron */
+        /* .jumbotron {
+            background-color: #e0f7fa;
+            padding: 30px;
+            text-align: center;
+        } */
+
+        .jumbotron h2 {
+            color: #006064;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #3c8dbc93;
+            color: rgb(14, 12, 12);
+            padding: 2px 0;
+            /* position: fixed; */
+            bottom: 0;
+            width: 100%;
+            margin: 2px;
+        }
+    
+        .register-form {
+   
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgba(76, 92, 92, 0.158);
+            
+          }
+
+          /* Add custom styles for rounded corners */
+        .navbar {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .jumbotron {
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            color: white;
+            
+        }
+
+        .jumbotron1 {
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: rgba(81, 192, 131, 0.897);
+            color: white;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.637);
+        }
+
+        .picture {
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 50px;
+            margin: 3px; 
+            background-color: rgba(18, 20, 20, 0);
+            
+        }
+
+
+        .footer {
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            margin-top: 15px;
+        }
+       
+        .picveterant {
+            padding: 3px;
+            margin: 2px;
+            border-radius: 25px;
+            margin:5px;
+            background-color: rgba(9, 13, 14, 0.37);
+        }
+        .jumbopic {
+            border-radius: 25px;
+            background-color: rgb(245, 250, 250);
+            padding-right: 5px;
+            
+        }
+
+        .jumbopic2 {
+            margin: 2px;
+            
+            padding-right: 5px;
+            
+        }
+
+        .calls {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5em;
+            border-radius: 25px;
+            background-color: rgba(240, 243, 240, 0.993);
+            padding: 15px;
+            margin: 15px;
+            font-weight: bolder;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        
+        }
+
+        /* .logo-navbar {
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            border-radius: 25px;
+           
+        } */
+
+        .mytopnav {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            padding: 10px;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 1.2em;
+        }
+
+
+        .lead {
+            font-size: 1.2em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(253, 253, 253);
+            /* background-color: rgb(95, 213, 218); */
+            border-radius: 5px;
+            font-style: italic;
+            
+           
+        
+        }
+
+        caro {
+            background-color: rgba(121, 109, 45, 0.199);
+            size: 80%;
+            color: black;
+        }
+
+        h5 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5em;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            background-color: rgba(9, 13, 14, 0.37);
+            border-radius: 10px;
+        }
+        .p5 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5em;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+            background-color: rgba(9, 13, 14, 0.527);
+            border-radius: 10px;
+        }

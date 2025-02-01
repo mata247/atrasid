@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact</title>
+</head>
+<body>
+      <!-- 6. Contactez-Nous -->
+    <section id="contact" class="container py-5">
+      <h2 class=" register-form mb-4">Nous Contacter</h2>
+      <form action="/soumettre" method="post">
+          <div class="mb-3">
+              <label for="nom" class="form-label">Nom :</label>
+              <input type="text" id="nom" name="nom" class="form-control">
+          </div>
+          <div class="mb-3">
+              <label for="email" class="form-label">Email :</label>
+              <input type="email" id="email" name="email" class="form-control">
+          </div>
+          <div class="mb-3">
+              <label for="message" class="form-label">Message :</label>
+              <textarea id="message" name="message" rows="5" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+  </section>
+</body>
+</html>

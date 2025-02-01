@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemples Complet de Cours HTML</title>
+</head>
+<body>
+    <!-- Barre de Navigation -->
+    <nav>
+        <ul style="list-style-type: none; display: flex; justify-content: space-around; background-color: #f0f0f0; padding: 10px;">
+            <li><a href="about-us.html" style="text-decoration: none; color: #000;">About Us</a></li>
+            <li><a href="nos-contactes.html" style="text-decoration: none; color: #000;">Nos Contactes</a></li>
+            <li><a href="temoignage.html" style="text-decoration: none; color: #000;">Témoignage</a></li>
+        </ul>
+    </nav>
+
+    <!-- 1. Introduction à HTML -->
+    <section id="introduction">
+        <h1>Bienvenue à l'apprentissage HTML</h1>
+        <p>Ceci est une simple page créée avec HTML.</p>
+    </section>
+
+    <!-- 2. Structure d’un Document HTML -->
+    <section id="structure">
+        <h2>Structure d'un Document HTML</h2>
+        <p>Voici une explication des sections principales d’un fichier HTML.</p>
+    </section>
+
+    <!-- 3. Éléments et Attributs HTML -->
+    <section id="elements-et-attributs">
+        <h2>Éléments et Attributs HTML</h2>
+        <p style="color: blue;">Ce texte est en bleu grâce à un attribut de style.</p>
+        <img src="https://via.placeholder.com/150" alt="Exemple d'image">
+    </section>
+
+    <!-- 4. Mise en Forme et Sémantique du Texte -->
+    <section id="mise-en-forme">
+        <h2>Mise en Forme et Sémantique du Texte</h2>
+        <p>Ceci est un texte en <strong>gras</strong>, en <em>italique</em>, et en <u>souligné</u>.</p>
+        <h3>Liste Ordonnée</h3>
+        <ol>
+            <li>Élément 1</li>
+            <li>Élément 2</li>
+            <li>Élément 3</li>
+        </ol>
+        <h3>Liste Non Ordonnée</h3>
+        <ul>
+            <li>Élément A</li>
+            <li>Élément B</li>
+            <li>Élément C</li>
+        </ul>
+    </section>
+
+    <!-- 5. Liens et Navigation -->
+    <section id="liens">
+        <h2>Liens et Navigation</h2>
+        <p>Visitez <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>.</p>
+        <a href="#section2">Aller à la Section 2</a>
+        <h3 id="section2">Section 2</h3>
+        <p>Bienvenue dans la section 2.</p>
+    </section>
+
+    <!-- 6. Images et Médias -->
+    <section id="medias">
+        <h2>Images et Médias</h2>
+        <img src="https://via.placeholder.com/300" alt="Exemple d'image">
+        <video width="320" height="240" controls>
+            <source src="video-example.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        <audio controls>
+            <source src="audio-example.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+    </section>
+
+    <!-- 7. Tableaux -->
+    <section id="tableaux">
+        <h2>Tableaux</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Âge</th>
+                    <th>Classe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marie</td>
+                    <td>16</td>
+                    <td>10A</td>
+                </tr>
+                <tr>
+                    <td>Paul</td>
+                    <td>15</td>
+                    <td>9B</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 8. Formulaires et Champs de Saisie -->
+    <section id="formulaires">
+        <h2>Formulaire de Contact</h2>
+        <form action="/soumettre" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom"><br><br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email"><br><br>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- 9. Éléments Sémantiques HTML5 -->
+    <section id="semantique">
+        <h2>Éléments Sémantiques HTML5</h2>
+        <header>
+            <h3>Mon Blog</h3>
+            <nav>
+                <a href="#">Accueil</a> | <a href="#">À Propos</a> | <a href="#">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h3>Premier Article</h3>
+                <p>Ceci est un article de blog exemple.</p>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2025 Mon Blog</p>
+        </footer>
+    </section>
+</body>
+</html>
